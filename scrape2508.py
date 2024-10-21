@@ -108,13 +108,10 @@ def get_url_and_scrape():
     else:
         messagebox.showwarning("Input Required", "No URL provided. Please enter a valid URL.")
 
-def on_closing():
-        root.destroy()  # Close the window
 
 
 # Setup the UI
 root = tk.Tk()
-root.protocol("WM_DELETE_WINDOW", on_closing)
 
 root.withdraw()  # Hide the root window
 
